@@ -48,3 +48,16 @@ opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
 opt.foldmethod = "expr"
 opt.foldlevel = 99
 
+-- Rust analyzer configuration
+vim.g.rustaceanvim = {
+  server = {
+    settings = {
+      ["rust-analyzer"] = {
+        diagnostics = {
+          disabled = { "unresolved-proc-macro" },
+        },
+      },
+    },
+  },
+}
+

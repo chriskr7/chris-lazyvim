@@ -9,19 +9,19 @@ return {
       require("claude-code").setup({
         -- Terminal Window Settings
         window = {
-          split_ratio = 0.3,      -- Screen ratio (width: height, height: width)
-          position = "botright",  -- Window position: "botright", "topleft", "vertical"
-          enter_insert = true,    -- Enter insert mode when opening Claude Code
-          hide_numbers = true,    -- Hide line numbers in terminal window
+          split_ratio = 0.4, -- Screen ratio (width: height, height: width)
+          position = "botright", -- Window position: "botright", "topleft", "vertical"
+          enter_insert = true, -- Enter insert mode when opening Claude Code
+          hide_numbers = true, -- Hide line numbers in terminal window
           hide_signcolumn = true, -- Hide sign column in terminal window
         },
 
         -- File Refresh Settings
         refresh = {
-          enable = true,              -- Enable file change detection
-          updatetime = 100,           -- Claude Code updatetime (milliseconds)
-          timer_interval = 1000,      -- File change check interval (milliseconds)
-          show_notifications = true,  -- Show notifications when file reloads
+          enable = true, -- Enable file change detection
+          updatetime = 100, -- Claude Code updatetime (milliseconds)
+          timer_interval = 1000, -- File change check interval (milliseconds)
+          show_notifications = true, -- Show notifications when file reloads
         },
 
         -- Git Project Settings
@@ -35,12 +35,12 @@ return {
         -- Keymap Settings
         keymaps = {
           toggle = {
-            normal = "<C-,>",    -- Toggle Claude Code in normal mode
-            terminal = "<C-,>",  -- Toggle Claude Code in terminal mode
+            normal = "<C-,>", -- Toggle Claude Code in normal mode
+            terminal = "<C-,>", -- Toggle Claude Code in terminal mode
           },
-          window_navigation = true,  -- Enable window navigation keymaps (<C-h/j/k/l>)
-          scrolling = true,         -- Enable scrolling keymaps (<C-f/b>)
-        }
+          window_navigation = true, -- Enable window navigation keymaps (<C-h/j/k/l>)
+          scrolling = true, -- Enable scrolling keymaps (<C-f/b>)
+        },
       })
 
       -- Session Management Commands
