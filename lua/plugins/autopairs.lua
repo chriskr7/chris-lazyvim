@@ -1,7 +1,7 @@
 -- plugins/autopairs.lua
 return {
-  -- mini.pairs disable
-  { "echasnovski/mini.pairs", enabled = false },
+  -- mini.pairs disable (rename 적용)
+  { "nvim-mini/mini.pairs", enabled = false },
 
   -- nvim-autopairs enable
   {
