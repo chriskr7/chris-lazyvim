@@ -59,3 +59,10 @@ vim.g.rustaceanvim = {
     },
   },
 }
+
+vim.api.nvim_create_autocmd("BufReadPre", {
+  pattern = "/Users/chrishan/work/winway/nh_fx_mds/**",
+  callback = function()
+    vim.opt.fileencodings = "euc-kr,utf-8"
+  end,
+})

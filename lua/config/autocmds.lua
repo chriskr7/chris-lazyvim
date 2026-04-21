@@ -1,3 +1,12 @@
+-- Pro*C / Embedded SQL filetype detection
+vim.filetype.add({
+  extension = {
+    sc = "c",
+    pc = "c",
+    sqc = "c",
+  },
+})
+
 -- Autocmds are automatically loaded on the VeryLazy event
 local function augroup(name)
   return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
