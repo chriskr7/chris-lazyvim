@@ -1,11 +1,5 @@
--- Pro*C / Embedded SQL filetype detection
-vim.filetype.add({
-  extension = {
-    sc = "c",
-    pc = "c",
-    sqc = "c",
-  },
-})
+-- (filetype.add moved to lua/config/options.lua — must run before VeryLazy
+--  so oldfile-restored buffers get the right filetype.)
 
 -- Autocmds are automatically loaded on the VeryLazy event
 local function augroup(name)

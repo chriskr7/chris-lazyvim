@@ -8,6 +8,17 @@ vim.g.lazyvim_python_lsp = "pyrefly"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
 
+-- Pro*C / Embedded SQL filetype detection (must run before any file is opened
+-- so oldfile-restored / cli-argument buffers get the right filetype).
+vim.filetype.add({
+  extension = {
+    sc = "c",
+    pc = "c",
+    sqc = "c",
+    gc = "c", -- Goldilocks ESQL preprocessor (gpec)
+  },
+})
+
 local opt = vim.opt
 
 -- Line number
